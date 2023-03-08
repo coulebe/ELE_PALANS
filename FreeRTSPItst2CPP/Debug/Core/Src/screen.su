@@ -1,0 +1,6 @@
+../Core/Src/screen.c:21:6:writeScrLine	48	static
+../Core/Src/screen.c:37:6:drawPage0	56	static
+../Core/Src/screen.c:98:6:writeScrLine2	48	static
+../Core/Src/screen.c:113:6:writeScrLine3	48	static
+../Core/Src/screen.c:129:6:drawPage1	48	static
+../Core/Src/screen.c:160:6:updateScreen	8	static

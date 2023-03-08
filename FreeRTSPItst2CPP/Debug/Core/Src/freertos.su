@@ -1,0 +1,10 @@
+../Core/Src/freertos.c:467:6:SlowThisDown	16	static
+../Core/Src/freertos.c:474:6:SPITransmitReceive	112	static
+../Core/Src/freertos.c:555:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/freertos.c:571:7:getDt	4	static
+../Core/Src/freertos.c:576:7:getOneOverDt	4	static
+../Core/Src/freertos.c:582:6:resetCounter	4	static
+../Core/Src/freertos.c:587:6:setCounter	16	static
+../Core/Src/freertos.c:128:6:StartDefaultTask	64	static
+../Core/Src/freertos.c:64:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:423:6:TransmitTest	4	static
