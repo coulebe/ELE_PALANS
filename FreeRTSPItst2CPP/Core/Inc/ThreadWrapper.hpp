@@ -11,7 +11,7 @@
 
 //Constants
 #define LOWEST_PRIORITY  0
-#define HIGHEST_PRIORITY configMAX_PRIORITIES - 1
+#define HIGHEST_PRIORITY 7 //7 priority levels for RealTime
 
 //Classic dependencies
 #include <cstdlib>
@@ -28,7 +28,7 @@ class ThreadWrapper_t
 {
   protected:
     ThreadWrapper_t
-      ( int _taskPriority = configMAX_PRIORITIES - 1
+      ( int _taskPriority = HIGHEST_PRIORITY
        ,int _taskStackSize = 0
       )
       :running( false)
@@ -54,7 +54,7 @@ class ThreadWrapper_t
     };
 
     bool isRunning()const { return running; };
-    unsigned long getThreadId() const { return (unsigned long)threadId; };
+    osThreadId_t getThreadId() const { return threadId; };
     int getTaskPriority(){return taskPriority; };
 
     // Return true if thread is started, false otherwise.

@@ -1,0 +1,5 @@
+../Core/Inc/ThreadWrapper.hpp:41:13:ThreadWrapper_t::~ThreadWrapper_t()	24	static
+../Core/Inc/ThreadWrapper.hpp:41:13:virtual ThreadWrapper_t::~ThreadWrapper_t()	16	static
+../Core/Inc/ThreadTest.hpp:34:8:ThreadWrapperTest_t::~ThreadWrapperTest_t()	16	static
+../Core/Inc/ThreadTest.hpp:34:8:virtual ThreadWrapperTest_t::~ThreadWrapperTest_t()	16	static
+../Core/Src/ThreadTest.cpp:13:6:virtual void ThreadWrapperTest_t::entryFunc()	16	static

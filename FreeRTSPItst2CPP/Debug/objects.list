@@ -1,6 +1,6 @@
 "./Core/Src/GFX_FUNCTIONS.o"
-"./Core/Src/PeriodicThread.o"
 "./Core/Src/ST7735.o"
+"./Core/Src/ThreadTest.o"
 "./Core/Src/ThreadWrapper.o"
 "./Core/Src/alt_main.o"
 "./Core/Src/calibration.o"

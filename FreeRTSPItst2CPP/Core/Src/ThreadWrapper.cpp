@@ -39,6 +39,7 @@ int ThreadWrapper_t::start()
 	    else
 	    {
 	      running = true;
+	      printf("Thread %i is running",((int)threadId));
 	    }
 	  }
 	  return (int) threadId;

@@ -63,6 +63,8 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
+
+
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -82,6 +84,7 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
+	alt_main();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -108,7 +111,7 @@ volatile uint8_t hdr_received;
 void TransmitTest(uint8_t* testdata, uint32_t size);
 void InitTargetPos();
 
-uint8_t signal=0;
+//uint8_t signal=0;
 
 volatile int16_t vPWMX=0;
 volatile int16_t vPWMY=0;
@@ -128,7 +131,7 @@ uint32_t frame=0;
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	alt_main();
+
 	  printf("LCD Init:%i\n",counter[0]);
 
 	  ST7735_Init(1);

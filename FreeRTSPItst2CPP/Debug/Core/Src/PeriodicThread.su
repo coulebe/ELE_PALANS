@@ -1,0 +1,5 @@
+../Core/Inc/ThreadWrapper.hpp:57:18:void* ThreadWrapper_t::getThreadId() const	16	static
+../Core/Src/PeriodicThread.cpp:21:6:virtual void PeriodicThread_t::entryFunc()	16	static
+../Core/Src/PeriodicThread.cpp:32:15:static void (* PeriodicThread_t::dispatcher(uint32_t))(void*)	24	static
+../Core/Src/PeriodicThread.cpp:43:6:void PeriodicThread_t::time_init(long unsigned int, long unsigned int)	24	static
+../Core/Src/PeriodicThread.cpp:63:6:bool PeriodicThread_t::start(long unsigned int, long unsigned int)	32	static

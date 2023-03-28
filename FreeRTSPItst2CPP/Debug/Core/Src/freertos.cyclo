@@ -1,0 +1,10 @@
+freertos.c:470:6:SlowThisDown	2
+freertos.c:477:6:SPITransmitReceive	9
+freertos.c:558:6:HAL_GPIO_EXTI_Callback	2
+freertos.c:574:7:getDt	1
+freertos.c:579:7:getOneOverDt	1
+freertos.c:585:6:resetCounter	1
+freertos.c:590:6:setCounter	1
+freertos.c:131:6:StartDefaultTask	18
+freertos.c:64:6:MX_FREERTOS_Init	1
+freertos.c:426:6:TransmitTest	5

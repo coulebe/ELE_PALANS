@@ -1,0 +1,6 @@
+screen.c:21:6:writeScrLine	2
+screen.c:37:6:drawPage0	16
+screen.c:98:6:writeScrLine2	2
+screen.c:113:6:writeScrLine3	2
+screen.c:129:6:drawPage1	10
+screen.c:160:6:updateScreen	3

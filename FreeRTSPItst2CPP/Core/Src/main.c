@@ -26,7 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
-
+#include  <errno.h>
+#include  <sys/unistd.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,14 +67,38 @@ void MX_FREERTOS_Init(void);
 
 #undef FLASH_LATENCY_0
 #define FLASH_LATENCY_0 FLASH_LATENCY_4 //HACK IT!
-
-int _write(int file, char *ptr, int len)
+//Redirect printf to uart
+int _write(int file, char *data, int len)
 {
-	for(int i=0;i<len;++i)
-	{
-		ITM_SendChar( (*ptr++));
-	}
-	return len;
+   if ((file != STDOUT_FILENO) && (file != STDERR_FILENO))
+   {
+      errno = EBADF;
+      return -1;
+   }
+
+   // arbitrary timeout 1000
+   HAL_StatusTypeDef status =
+   HAL_UART_Transmit(&huart4, (uint8_t*)data, len, 1000);
+
+   // return # of bytes written - as best we can tell
+   return (status == HAL_OK ? len : 0);
+}
+
+//Redirect printf to uart
+int _read(int file, char *data, int len)
+{
+   if ((file != STDOUT_FILENO) && (file != STDERR_FILENO))
+   {
+      errno = EBADF;
+      return -1;
+   }
+
+   // arbitrary timeout 1000
+   HAL_StatusTypeDef status =
+   HAL_UART_Receive(&huart4, (uint8_t*)data, len, 1000);
+
+   // return # of bytes written - as best we can tell
+   return (status == HAL_OK ? len : 0);
 }
 
 

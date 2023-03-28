@@ -1,0 +1,4 @@
+keyboard.c:18:9:keyClicked	2
+keyboard.c:23:9:keyReleased	2
+keyboard.c:28:9:keyPressed	1
+keyboard.c:34:6:scanKeyboard	8

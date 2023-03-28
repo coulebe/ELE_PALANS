@@ -1,8 +1,9 @@
-../Core/Src/main.c:70:5:_write	4	static,ignoring_inline_asm
-../Core/Src/main.c:103:6:HAL_SPI_TransmitRegister	8	static
-../Core/Src/main.c:271:6:SystemClock_Config	120	static,ignoring_inline_asm
-../Core/Src/main.c:332:6:PeriphCommonClock_Config	200	static,ignoring_inline_asm
-../Core/Src/main.c:156:5:main	24	static
-../Core/Src/main.c:358:1:__io_putchar	16	static
-../Core/Src/main.c:377:6:HAL_TIM_PeriodElapsedCallback	0	static
-../Core/Src/main.c:394:6:Error_Handler	0	static,ignoring_inline_asm
+../Core/Src/main.c:71:5:_write	8	static
+../Core/Src/main.c:88:5:_read	8	static
+../Core/Src/main.c:128:6:HAL_SPI_TransmitRegister	8	static
+../Core/Src/main.c:296:6:SystemClock_Config	120	static,ignoring_inline_asm
+../Core/Src/main.c:357:6:PeriphCommonClock_Config	200	static,ignoring_inline_asm
+../Core/Src/main.c:181:5:main	24	static
+../Core/Src/main.c:383:1:__io_putchar	16	static
+../Core/Src/main.c:402:6:HAL_TIM_PeriodElapsedCallback	0	static
+../Core/Src/main.c:419:6:Error_Handler	0	static,ignoring_inline_asm
